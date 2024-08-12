@@ -42,8 +42,6 @@ To solve this problem efficiently, we can use a hashmap (or dictionary in Python
 
 ### Code 
 ```
-python
-
 
  def two_sum(nums, target):
     # Dictionary to hold the number and its index
