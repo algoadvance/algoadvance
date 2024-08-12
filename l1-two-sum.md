@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /l1
+title: Two sum
+permalink: /l1-two-sun
 ---
 
 [AlgoAdvance Blog](https://algoadvance.github.io/algoadvance)
@@ -45,4 +45,6 @@ def two_sum(nums, target): # Dictionary to hold the number and its index num_dic
 (string)
 
 ### Time Complexity 
-The time complexity of the above solution is \(O(n)\), where \(n\) is the number of elements in the array. This is because we perform a single traversal of the array, and dictionary operations (insert and lookup) are \(O(1)\) on average. ### Space Complexity The space complexity is also \(O(n)\) because, in the worst case, we might need to store all \(n\) elements in the dictionary."
+The time complexity of the above solution is \(O(n)\), where \(n\) is the number of elements in the array. This is because we perform a single traversal of the array, and dictionary operations (insert and lookup) are \(O(1)\) on average.
+### Space Complexity 
+The space complexity is also \(O(n)\) because, in the worst case, we might need to store all \(n\) elements in the dictionary."
