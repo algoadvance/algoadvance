@@ -41,7 +41,7 @@ Output: [0,1]
 To solve this problem efficiently, we can use a hashmap (or dictionary in Python) to store the elements of the array and their corresponding indices as we iterate through the array. 1. **Initialize an empty dictionary to keep track of the numbers and their indices.** 2. **Iterate through each element in the array.** - For the current element, calculate the required complement that, when added to the current element, equals the target. - Check if this complement is already present in the dictionary. - If the complement is found, return the indices of the current element and the complement. - If the complement is not found, add the current element along with its index to the dictionary and proceed to the next element. 
 
 ### Code 
-'''
+```
 python
 
 
@@ -61,7 +61,7 @@ python
         
         # Store the number and its index in the dictionary
         num_dict[num] = index
-'''
+```
 
 ### Time Complexity 
 The time complexity of the above solution is \(O(n)\), where \(n\) is the number of elements in the array. This is because we perform a single traversal of the array, and dictionary operations (insert and lookup) are \(O(1)\) on average.
