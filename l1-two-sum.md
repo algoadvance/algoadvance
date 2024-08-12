@@ -41,7 +41,15 @@ Output: [0,1]
 To solve this problem efficiently, we can use a hashmap (or dictionary in Python) to store the elements of the array and their corresponding indices as we iterate through the array. 1. **Initialize an empty dictionary to keep track of the numbers and their indices.** 2. **Iterate through each element in the array.** - For the current element, calculate the required complement that, when added to the current element, equals the target. - Check if this complement is already present in the dictionary. - If the complement is found, return the indices of the current element and the complement. - If the complement is not found, add the current element along with its index to the dictionary and proceed to the next element. 
 
 ### Code 
-"//python def two_sum(nums, target): # Dictionary to hold the number and its index num_dict = {} # Iterate over the array for index, num in enumerate(nums): # Determine the needed complement complement = target - num # Check if complement exists in the dictionary if complement in num_dict: # Return the indices of the current number and the complement return [num_dict[complement], index] # Store the number and its index in the dictionary num_dict[num] = index # Test cases print(two_sum([2, 7, 11, 15], 9)) # Output: [0, 1] print(two_sum([3, 2, 4], 6)) # Output: [1, 2] print(two_sum([3, 3], 6)) # Output: [0, 1] "
+ def two_sum(nums, target): # Dictionary to hold the number and its index 
+   num_dict = {} # Iterate over the array 
+   for index, num in enumerate(nums): # Determine the needed complement 
+     complement = target - num # Check if complement exists in the dictionary 
+     if complement in num_dict: # Return the indices of the current number and the complement
+       return [num_dict[complement], index] # Store the number and its index in the dictionary 
+     num_dict[num] = index
+     
+  # Test cases print(two_sum([2, 7, 11, 15], 9)) # Output: [0, 1] print(two_sum([3, 2, 4], 6)) # Output: [1, 2] print(two_sum([3, 3], 6)) # Output: [0, 1] "
 
 
 ### Time Complexity 
