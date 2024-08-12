@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Two sum
-permalink: /l1-two-sun
+permalink: /l1-two-sum
 ---
 
 [AlgoAdvance Blog](https://algoadvance.github.io/algoadvance)
