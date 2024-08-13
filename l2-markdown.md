@@ -1,3 +1,9 @@
+---
+layout: page
+title: Add two numbers
+permalink: /l2-markdown
+---
+
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
 2\. Add Two Numbers
