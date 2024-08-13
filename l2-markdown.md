@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Add two numbers
-permalink: /l2-markdown
+permalink: /l2md
 ---
 
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
