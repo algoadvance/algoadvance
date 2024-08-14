@@ -1,1 +1,1 @@
-Collection of interview coding questions for AlgoAdvance.com
+Collection of Leetcode interview coding questions by AlgoAdvance.com
