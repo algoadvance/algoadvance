@@ -17,7 +17,8 @@ layout: page
 title: %s
 permalink: /l%s
 ---
-            '''%(title, character)
+Leetcode Question: %s
+            '''%(title, character, character)
             new_content = link + content
             with open(os.path.join(destination_dir, filename), 'w') as file:
                 file.write(new_content)
