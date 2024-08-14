@@ -6,27 +6,26 @@ def copy_and_add_jekyll(source_dir, destination_dir):
     for filename in os.listdir(source_dir):
         if filename.endswith('.html'):
            if os.path.isfile(os.path.join(source_dir, filename)):
-            name, extension = os.path.splitext(filename)
-            character = name.split('.')[0] 
-            title = name.split('.')[1]
-            with open(os.path.join(source_dir, filename), 'r') as file:
-                content = file.read()
-            link = '''
+            try:
+                name, extension = os.path.splitext(filename)
+                character = name.split('.')[0] 
+                title = name.split('.')[1]
+                with open(os.path.join(source_dir, filename), 'r') as file:
+                    content = file.read()
+                link = '''
 ---
 layout: page
 title: %s
 permalink: /l%s
 ---
 Leetcode Question: %s
-            '''%(title, character, character)
-            new_content = link + content
-            with open(os.path.join(destination_dir, filename), 'w') as file:
-                file.write(new_content)
-            # new_filename = character + filename
-            # source_path = os.path.join(source_dir, filename)
-            # destination_path = os.path.join(destination_dir, new_filename)
-            # shutil.copy2(source_path, destination_path)
-        
+                '''%(title, character, character)
+                new_content = link + content
+                with open(os.path.join(destination_dir, filename), 'w') as file:
+                    file.write(new_content)
+            except Exception as e:
+                print(e)
+                print("Error processing file: ", filename)
 
 if __name__ == "__main__":
     # if len(sys.argv) < 3:
