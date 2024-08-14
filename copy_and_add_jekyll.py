@@ -10,6 +10,7 @@ def copy_and_add_jekyll(source_dir, destination_dir):
                 name, extension = os.path.splitext(filename)
                 character = name.split('.')[0] 
                 title = name.split('.')[1]
+                title.replace('-out.html', '')
                 with open(os.path.join(source_dir, filename), 'r') as file:
                     content = file.read()
                 link = '''
