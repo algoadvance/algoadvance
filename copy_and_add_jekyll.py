@@ -11,6 +11,9 @@ def copy_and_add_jekyll(source_dir, destination_dir):
                 character = name.split('.')[0] 
                 title = name.split('.')[1]
                 title.replace('-out.html', '')
+                # continue if file is already in the destination folder
+                if os.path.isfile(os.path.join(destination_dir, filename)):
+                    continue
                 with open(os.path.join(source_dir, filename), 'r') as file:
                     content = file.read()
                 link = '''
@@ -19,7 +22,7 @@ layout: page
 title: %s
 permalink: /l%s
 ---
-Leetcode Question: %s
+Leetcode Question: %s\n
                 '''%(title, character, character)
                 new_content = link + content
                 with open(os.path.join(destination_dir, filename), 'w') as file:

@@ -1,0 +1,44 @@
+
+---
+layout: page
+title:  Count Submatrices With Equal Frequency of X and Y-out
+permalink: /l3212
+---
+Leetcode Question: 3212
+
+                *******************************************************<div id="title">3212. Count Submatrices With Equal Frequency of X and Y</div>
+*******************************************************<div class="elfjS" data-track-load="description_content"><p>Given a 2D character matrix <code>grid</code>, where <code>grid[i][j]</code> is either <code>'X'</code>, <code>'Y'</code>, or <code>'.'</code>, return the number of <span class="cursor-pointer relative text-dark-blue-s text-sm" data-keyword="submatrix"><div class="popover-wrapper inline-block" data-headlessui-state=""><div><div aria-expanded="false" data-headlessui-state="" id="headlessui-popover-button-:rj:"><div>submatrices</div></div><div style="position: fixed; z-index: 40; inset: 0px auto auto 0px; transform: translate(282px, 238px);"></div></div></div></span> that contain:</p>
+<ul>
+<li><code>grid[0][0]</code></li>
+<li>an <strong>equal</strong> frequency of <code>'X'</code> and <code>'Y'</code>.</li>
+<li><strong>at least</strong> one <code>'X'</code>.</li>
+</ul>
+<p> </p>
+<p><strong class="example">Example 1:</strong></p>
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">grid = [["X","Y","."],["Y",".","."]]</span></p>
+<p><strong>Output:</strong> <span class="example-io">3</span></p>
+<p><strong>Explanation:</strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2024/06/07/examplems.png" style="padding: 10px; background: rgb(255, 255, 255); border-radius: 0.5rem; width: 175px; height: 350px;"/></strong></p>
+</div>
+<p><strong class="example">Example 2:</strong></p>
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">grid = [["X","X"],["X","Y"]]</span></p>
+<p><strong>Output:</strong> <span class="example-io">0</span></p>
+<p><strong>Explanation:</strong></p>
+<p>No submatrix has an equal frequency of <code>'X'</code> and <code>'Y'</code>.</p>
+</div>
+<p><strong class="example">Example 3:</strong></p>
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">grid = [[".","."],[".","."]]</span></p>
+<p><strong>Output:</strong> <span class="example-io">0</span></p>
+<p><strong>Explanation:</strong></p>
+<p>No submatrix has at least one <code>'X'</code>.</p>
+</div>
+<p> </p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li><code>1 &lt;= grid.length, grid[i].length &lt;= 1000</code></li>
+<li><code>grid[i][j]</code> is either <code>'X'</code>, <code>'Y'</code>, or <code>'.'</code>.</li>
+</ul>
+</div><br><br><hr><br>
