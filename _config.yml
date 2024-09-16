@@ -1,1 +1,2 @@
-{% include analytics.html %}
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
